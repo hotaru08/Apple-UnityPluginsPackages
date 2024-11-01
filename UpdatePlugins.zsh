@@ -39,10 +39,8 @@ if [ ! -d $core_plugin_dir ]; then
     mkdir $core_plugin_dir
 fi
 tar --extract --file "${core_plugin_dir}.tgz" -C $core_plugin_dir
-rm -rf "${core_plugin_dir}.tgz"
 
 if [ ! -d $gamekit_plugin_dir ]; then
     mkdir $gamekit_plugin_dir
 fi
 tar --extract --file "${gamekit_plugin_dir}.tgz" -C $gamekit_plugin_dir
-rm -rf "${gamekit_plugin_dir}.tgz"
